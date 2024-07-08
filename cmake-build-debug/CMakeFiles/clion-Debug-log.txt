@@ -1,10 +1,13 @@
-/Users/byeongwoon/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Users/byeongwoon/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/byeongwoon/CLionProjects/c_algorithm -B /Users/byeongwoon/CLionProjects/c_algorithm/cmake-build-debug
--- The C compiler identification is AppleClang 15.0.0.15000309
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Configuring done (4.5s)
+/Users/leebyeongwoon/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /Users/leebyeongwoon/CLionProjects/c-repo -B /Users/leebyeongwoon/CLionProjects/c-repo/cmake-build-debug
+CMake Deprecation Warning:
+  Support for "Extra Generators" like
+
+    CodeBlocks
+
+  is deprecated and will be removed from a future version of CMake.  IDEs may
+  use the cmake-file-api(7) to view CMake-generated project build trees.
+
+
+-- Configuring done (0.0s)
 -- Generating done (0.0s)
--- Build files have been written to: /Users/byeongwoon/CLionProjects/c_algorithm/cmake-build-debug
+-- Build files have been written to: /Users/leebyeongwoon/CLionProjects/c-repo/cmake-build-debug
