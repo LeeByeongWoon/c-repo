@@ -13,4 +13,17 @@ add_executable(c_algorithm main.c
         pointer.h
         pointer.c
         string.h
-        string.c)
+        string.c
+        variable.h
+        variable.c
+        multiArray_pointerArray.h
+        multiArray_pointerArray.c
+        dynamic_memory_allocation.h
+        dynamic_memory_allocation.c
+        Func.c
+        Func.h
+        Student.h
+        Student.c
+        fileIO.c
+        fileIO.h
+)
