@@ -1,7 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "Student.h"
-#include "fileIO.h"
+#include "basic/Student.h"
+#include "fileIO/fileIO.h"
+#include "basic/preprocessor.h"
+#include "dataStructure/arrayList.h"
+
+
+#define PI 3.1415926535
 //함수의 시작점 항상 0을 반환 하므로(종료 코드) 반환 타입이 int임
 /*
  * 변수 종류
@@ -20,13 +25,13 @@
 
 
 int main(void) {
-    Student student1 = createStudentReturnStudent("20141897", "이병운", 4, "정보통신학과", 90);
-    Student student2 = createStudentReturnStudent("20141898", "이병운", 3, "정보통신학과", 99);
-    Student student3 = createStudentReturnStudent("20141899", "이병운", 4, "정보통신학과", 88);
-
-    Student student[] = {student1, student2, student3};
-    printStudentInfo(student3);
-    inputStudentData(student, 3);
+    addBack(3);
+    addBack(4);
+    addBack(5);
+    addFirst(5);
+    addBack(1);
+    deleteAt(2);
+    printList();
     return 0;
 }
 

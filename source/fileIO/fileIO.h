@@ -2,7 +2,7 @@
 // Created by 이병운 on 24. 7. 31.
 //
 
-#include "Student.h"
+#include "../basic/Student.h"
 
 #ifndef C_ALGORITHM_FILEIO_H
 #define C_ALGORITHM_FILEIO_H
