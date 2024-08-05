@@ -4,6 +4,7 @@
 #include "fileIO/fileIO.h"
 #include "basic/preprocessor.h"
 #include "dataStructure/arrayList.h"
+#include "dataStructure/linkedList.h"
 
 
 #define PI 3.1415926535
@@ -25,13 +26,8 @@
 
 
 int main(void) {
-    addBack(3);
-    addBack(4);
-    addBack(5);
-    addFirst(5);
-    addBack(1);
-    deleteAt(2);
-    printList();
+    Node root = {1, NULL};
+    addFront()
     return 0;
 }
 

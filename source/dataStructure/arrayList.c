@@ -15,6 +15,7 @@ void addBack(int num) {
     count++;
 }
 
+//하나씩 미루기
 void addFirst(int num) {
     for (int i = count; i >= 1; i--) {
         arr[i] = arr[i - 1];
@@ -23,6 +24,7 @@ void addFirst(int num) {
     count++;
 }
 
+//삭제하고 하나식 당기기
 void deleteAt(int index) {
     for (int i = index; i < count - 1; i++) {
         arr[i] = arr[i + 1];
