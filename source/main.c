@@ -4,7 +4,7 @@
 #include "fileIO/fileIO.h"
 #include "basic/preprocessor.h"
 #include "dataStructure/arrayList.h"
-#include "dataStructure/linkedList.h"
+#include "dataStructure/singleLinkedList.h"
 
 
 #define PI 3.1415926535
@@ -26,8 +26,6 @@
 
 
 int main(void) {
-    Node root = {1, NULL};
-    addFront()
     return 0;
 }
 

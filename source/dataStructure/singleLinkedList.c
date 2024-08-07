@@ -4,7 +4,7 @@
 
 #include <stdlib.h>
 #include <printf.h>
-#include "linkedList.h"
+#include "singleLinkedList.h"
 
 Node *head;
 
@@ -60,20 +60,6 @@ void addFront(Node *root, int data) {
     root->next = node;
 }
 
-void appendNode(Node *root, int data) {
-    Node *cur = root;
-    Node *newNode = {data, NULL};
-    while (cur != NULL) {
-        if (cur->next == NULL) {
-            cur->next = node;
-        } else {
-            Node *nextNode = cur->next;
-            cur->next = node;
-            node->next = nextNode;
-        }
-    }
-}
-
 void removeFront(Node *root) {
     Node *deleteNode = root->next;
     if (deleteNode != NULL) {
@@ -82,7 +68,7 @@ void removeFront(Node *root) {
     }
 }
 
-void singleLinkedList() {
+void singleLinkedListTest() {
     // 크기 동적 할당 & node 선언
     head = (Node *) malloc(sizeof(Node));
     Node *node1 = (Node *) malloc(sizeof(Node));

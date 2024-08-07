@@ -30,8 +30,10 @@ add_executable(c_algorithm source/main.c
         source/basic/preprocessor.h
         source/algorithm/algorithm.c
         source/algorithm/algorithm.h
-        source/dataStructure/linkedList.c
-        source/dataStructure/linkedList.h
+        source/dataStructure/singleLinkedList.c
+        source/dataStructure/singleLinkedList.h
         source/dataStructure/arrayList.c
         source/dataStructure/arrayList.h
+        source/dataStructure/doublyLinkedList.c
+        source/dataStructure/doublyLinkedList.h
 )
