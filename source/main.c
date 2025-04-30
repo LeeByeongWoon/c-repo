@@ -1,13 +1,11 @@
-#include <stdio.h>
+#include <printf.h>
 #include <stdlib.h>
-#include "basic/Student.h"
 #include "fileIO/fileIO.h"
-#include "basic/preprocessor.h"
-#include "dataStructure/arrayList.h"
-#include "dataStructure/singleLinkedList.h"
+#include "prac/jsu.h"
+#include "prac/perfectNum.h"
+#include "dataStructure/listStack.h"
+#include <unistd.h>
 
-
-#define PI 3.1415926535
 //함수의 시작점 항상 0을 반환 하므로(종료 코드) 반환 타입이 int임
 /*
  * 변수 종류
@@ -23,9 +21,27 @@
  * %.2f -> 2번째 자릿수 까지 반올림
  */
 
-
+void prnt(int *a, int *b, int *c);
 
 int main(void) {
+
+    push(7);
+    push(5);
+    push(4);
+    pop();
+    push(6);
+    pop();
+    show();
     return 0;
+
 }
 
+void prnt(x, y, z)
+        int *x, *y, *z;
+{
+    while (*x < *y) {
+        ++*x;
+        *z = *z + *x;
+        prnt(x, y, z);
+    }
+}

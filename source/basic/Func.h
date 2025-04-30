@@ -5,10 +5,11 @@
 #ifndef C_ALGORITHM_FUNC_H
 #define C_ALGORITHM_FUNC_H
 
-#endif //C_ALGORITHM_FUNC_H
-
 void FuncPointer();
 
 void FuncPointerWithParams();
 
 void FuncPointerWithPointerParams();
+
+#endif //C_ALGORITHM_FUNC_H
+

@@ -36,4 +36,20 @@ add_executable(c_algorithm source/main.c
         source/dataStructure/arrayList.h
         source/dataStructure/doublyLinkedList.c
         source/dataStructure/doublyLinkedList.h
+        source/prac/control.c
+        source/prac/control.h
+        source/prac/jsu.c
+        source/prac/jsu.h
+        source/prac/insa.c
+        source/prac/insa.h
+        source/prac/t_factorial.c
+        source/prac/t_factorial.h
+        source/prac/bubbleSort.c
+        source/prac/bubbleSort.h
+        source/prac/perfectNum.c
+        source/prac/perfectNum.h
+        source/dataStructure/listStack.c
+        source/dataStructure/listStack.h
+        source/dataStructure/linkedListStack.c
+        source/dataStructure/linkedListStack.h
 )
