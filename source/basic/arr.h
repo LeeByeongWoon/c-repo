@@ -5,7 +5,7 @@
 #ifndef C_ALGORITHM_ARR_H
 #define C_ALGORITHM_ARR_H
 
-void printArr();
+static void printArr();
 
 void printArrMaxVal();
 

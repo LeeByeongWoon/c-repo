@@ -6,38 +6,38 @@
 #include <printf.h>
 #include "singleLinkedList.h"
 
-Node *head;
+GraphNode *head;
 
 // 메모리 해제 (해제 후 NULL을 할당하여 에러 방지)
-void freeNode(Node **node) {
+void freeNode(GraphNode **node) {
     if (*node != NULL) {
         free(*node);
         *node = NULL;
     }
 }
 
-void freeAll(Node *root) {
-    Node *cur = root->next;
+void freeAll(GraphNode *root) {
+    GraphNode *cur = root->next;
     while (cur != NULL) {
-        Node *nextNode = cur->next;
+        GraphNode *nextNode = cur->next;
         freeNode(&cur);
         cur = nextNode;
     }
     freeNode(&root);
 }
 
-void printAll(Node *root) {
+void printAll(GraphNode *root) {
     printf("%d\n", root->data);
-    Node *cur = head->next;
+    GraphNode *cur = head->next;
     while (cur != NULL) {
         printf("%d\n", cur->data);
         cur = cur->next;
     }
 }
 
-void deleteItem(Node *root, int targetData) {
-    Node *cur = root;
-    Node *prev = NULL;
+void deleteItem(GraphNode *root, int targetData) {
+    GraphNode *cur = root;
+    GraphNode *prev = NULL;
     while (cur != NULL) {
         if (cur->data == targetData) {
             if (prev == NULL) {
@@ -53,15 +53,15 @@ void deleteItem(Node *root, int targetData) {
     }
 }
 
-void addFront(Node *root, int data) {
-    Node *node = (Node *) malloc(sizeof(Node));
+void addFront(GraphNode *root, int data) {
+    GraphNode *node = (GraphNode *) malloc(sizeof(GraphNode));
     node->next = root->next;
     node->data = data;
     root->next = node;
 }
 
-void removeFront(Node *root) {
-    Node *deleteNode = root->next;
+void removeFront(GraphNode *root) {
+    GraphNode *deleteNode = root->next;
     if (deleteNode != NULL) {
         root->next = deleteNode->next;
         freeNode(&deleteNode);
@@ -70,9 +70,9 @@ void removeFront(Node *root) {
 
 void singleLinkedListTest() {
     // 크기 동적 할당 & node 선언
-    head = (Node *) malloc(sizeof(Node));
-    Node *node1 = (Node *) malloc(sizeof(Node));
-    Node *node2 = (Node *) malloc(sizeof(Node));
+    head = (GraphNode *) malloc(sizeof(GraphNode));
+    GraphNode *node1 = (GraphNode *) malloc(sizeof(GraphNode));
+    GraphNode *node2 = (GraphNode *) malloc(sizeof(GraphNode));
 
     // 데이터 삽입
     head->data = 0;

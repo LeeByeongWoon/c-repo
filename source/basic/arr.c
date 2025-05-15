@@ -4,7 +4,7 @@
 // Created by 이병운 on 7/8/24.
 //
 
-void printArr() {
+static void printArr() {
     int a[10] = {6, 5, 4, 3, 9, 8, 0, 1, 2, 7};
     int i;
     for (i = 0; i < 10; i++) {

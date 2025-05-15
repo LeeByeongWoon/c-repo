@@ -6,12 +6,8 @@
 #include "linkedListStack.h"
 
 void linkedStackPush(Stack *stack, int data) {
-    Node *node = (Node *) malloc(sizeof(Node));
+    GraphNode *node = (GraphNode *) malloc(sizeof(GraphNode));
     node->data = data;
     node->next = stack->top;
     stack->top = node;
 };
-
-int linkedStackPop() {
-
-}

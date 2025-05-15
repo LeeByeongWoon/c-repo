@@ -28,8 +28,6 @@ add_executable(c_algorithm source/main.c
         source/fileIO/fileIO.h
         source/basic/preprocessor.c
         source/basic/preprocessor.h
-        source/algorithm/algorithm.c
-        source/algorithm/algorithm.h
         source/dataStructure/singleLinkedList.c
         source/dataStructure/singleLinkedList.h
         source/dataStructure/arrayList.c
@@ -52,4 +50,24 @@ add_executable(c_algorithm source/main.c
         source/dataStructure/listStack.h
         source/dataStructure/linkedListStack.c
         source/dataStructure/linkedListStack.h
+        source/dataStructure/stack.c
+        source/dataStructure/stack.h
+        source/dataStructure/stackCalculator.c
+        source/dataStructure/stackCalculator.h
+        source/algorithm/selectionSort.c
+        source/algorithm/selectionSort.h
+        source/algorithm/insertionSort.c
+        source/algorithm/insertionSort.h
+        source/algorithm/arrAlgorithmUtil.c
+        source/algorithm/arrAlgorithmUtil.h
+        source/algorithm/qickSort.c
+        source/algorithm/qickSort.h
+        source/algorithm/graph.c
+        source/algorithm/graph.h
+        source/algorithm/dfs.c
+        source/algorithm/dfs.h
+        source/algorithm/bfs.c
+        source/algorithm/bfs.h
+        source/algorithm/binarySearchTree.c
+        source/algorithm/binarySearchTree.h
 )

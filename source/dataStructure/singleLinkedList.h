@@ -5,24 +5,24 @@
 #ifndef C_ALGORITHM_SINGLELINKEDLIST_H
 #define C_ALGORITHM_SINGLELINKEDLIST_H
 
-// struct Node 에 Node라는 별칭을 붙임
-typedef struct Node Node;
+// struct GraphNode 에 Node라는 별칭을 붙임
+typedef struct GraphNode GraphNode;
 
-struct Node {
+struct GraphNode {
     int data;
-    Node *next;
+    GraphNode *next;
 };
 
-void freeNode(Node **node);
+void freeNode(GraphNode **node);
 
-void freeAll(Node *root);
+void freeAll(GraphNode *root);
 
-void printAll(Node *root);
+void printAll(GraphNode *root);
 
-void deleteItem(Node *root, int targetData);
+void deleteItem(GraphNode *root, int targetData);
 
-void addFront(Node *root, int data);
+void addFront(GraphNode *root, int data);
 
-void removeFront(Node *root);
+void removeFront(GraphNode *root);
 
 #endif //C_ALGORITHM_SINGLELINKEDLIST_H

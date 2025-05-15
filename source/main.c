@@ -1,47 +1,18 @@
-#include <printf.h>
-#include <stdlib.h>
-#include "fileIO/fileIO.h"
-#include "prac/jsu.h"
-#include "prac/perfectNum.h"
-#include "dataStructure/listStack.h"
-#include <unistd.h>
 
-//함수의 시작점 항상 0을 반환 하므로(종료 코드) 반환 타입이 int임
-/*
- * 변수 종류
- * int number 4byte %d
- * long long long number 8byte %lld
- * float Decimal number 8byte %f
- * double big Decimal number 8byte %lf, %f 입력 받을 때 정확히 입력해야 하므로 입력은 %lf 로 해야함
- * charValue text unlimit %s
- * bool true/false
- * char 1 length text 1byte %c
- * % 이스케이프 -> %%
- * & 주소 연산자 -> 컴퓨터가 실제 데이터의 메모리에 접근함.
- * %.2f -> 2번째 자릿수 까지 반올림
- */
+#include <stdio.h>
+#include "algorithm/qickSort.h"
+#include "algorithm/binarySearchTree.h"
 
-void prnt(int *a, int *b, int *c);
 
 int main(void) {
-
-    push(7);
-    push(5);
-    push(4);
-    pop();
-    push(6);
-    pop();
-    show();
+    BinaryNode *root = NULL;
+    root = insertBinaryNode(root, 30);
+    root = insertBinaryNode(root, 17);
+    root = insertBinaryNode(root, 48);
+    root = insertBinaryNode(root, 5);
+    root = insertBinaryNode(root, 23);
+    root = insertBinaryNode(root, 37);
+    root = insertBinaryNode(root, 50);
+    binaryTreePreorder(root);
     return 0;
-
-}
-
-void prnt(x, y, z)
-        int *x, *y, *z;
-{
-    while (*x < *y) {
-        ++*x;
-        *z = *z + *x;
-        prnt(x, y, z);
-    }
 }

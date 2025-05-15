@@ -4,13 +4,13 @@
 
 #ifndef C_ALGORITHM_LINKEDLISTSTACK_H
 #define C_ALGORITHM_LINKEDLISTSTACK_H
-typedef struct Node {
+typedef struct GraphNode {
     int data;
-    struct Node *next;
-} Node;
+    struct GraphNode *next;
+} GraphNode;
 
 typedef struct {
-    Node *top;
+    GraphNode *top;
 } Stack;
 
 void linkedStackPush(Stack *stack, int data);

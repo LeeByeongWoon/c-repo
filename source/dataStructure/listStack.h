@@ -10,10 +10,10 @@
 #define SIZE 10000
 #define INF 99999999
 
-void push(int data);
+static void push(int data);
 
-int pop();
+static int pop();
 
-void show();
+static void show();
 
 #endif //C_ALGORITHM_LISTSTACK_H
